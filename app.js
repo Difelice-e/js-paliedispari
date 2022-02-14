@@ -1,49 +1,32 @@
-// parolaUtente = parolaUtente.replace(/\s/g, "");
-// console.log(parolaUtente);
-
-// const lettere = parolaUtente.split("");
-// lettere.reverse();
-// console.log(lettere);
-
-// const parolaInversa = lettere.join("");
-// console.log(parolaInversa);
-
-// if (parolaUtente === parolaInversa) {
-//     console.log(parolaUtente, parolaInversa, "la parola è un palindromo");
-// } else {
-//     console.log(parolaUtente, parolaInversa, "la parola non è un palindromo");
-// };
-// palindromo
-
 // chiedo all'utente una parola
 // inverto l'ordine delle lettere per creare il palindromo
 // controllo che la parola sia palindroma
 // restituisco un messaggio all'utente
 
-// let parolaUtente = prompt("inserisci una parola");
-// if (eUnPalindromo(parolaUtente) == true) {
-//     console.log("è un palindromo");
-// } else {
-//     console.log("non è un palindromo");
-// }
+let parolaUtente = prompt("inserisci una parola");
+if (eUnPalindromo(parolaUtente) == true) {
+    console.log("è un palindromo");
+} else {
+    console.log("non è un palindromo");
+}
 
-// function eUnPalindromo (parolaUtente) {
-//     parolaUtente = parolaUtente.replace(/\s/g, "");
-//     console.log(parolaUtente);
+function eUnPalindromo (parolaUtente) {
+    parolaUtente = parolaUtente.replace(/\s/g, "");
+    console.log(parolaUtente);
 
-//     const lettere = parolaUtente.split("");
-//     lettere.reverse();
-//     console.log(lettere);
+    const lettere = parolaUtente.split("");
+    lettere.reverse();
+    console.log(lettere);
 
-//     const parolaInversa = lettere.join("");
-//     console.log(parolaInversa);
+    const parolaInversa = lettere.join("");
+    console.log(parolaInversa);
 
-//     if (parolaUtente === parolaInversa) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
+    if (parolaUtente === parolaInversa) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 
@@ -55,13 +38,6 @@
 // faccio la somma dei due numeri 
 // stabilisco se la somma è pari o dispari
 // restituisco il messaggio all'utente
-
-
-// const pariODispari = prompt("scegli tra pari o dispari");
-// console.log(pariODispari);
-// const numeroUtente = prompt("inserisci un numero da 1-5");
-// console.log(numeroUtente);
-
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -89,7 +65,10 @@ function playPariDispari () {
 }
 
 
-document.getElementById("play").addEventListener("click", playPariDispari());
+document.getElementById("play").addEventListener("click", playPariDispari);
+
+
+
 
 
 
